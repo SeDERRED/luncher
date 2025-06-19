@@ -52,7 +52,7 @@ GAMES = [
     },
 {
         "name": "Simon",
-        "path": "..\\.\\oleg2007\\csripts or game\\simon.py",
+        "path": "..\\oleg2007\\oleg2007\\csripts or game\\simon.py",
         "description": """🧠 Simon: игра на память.
 Повторяй последовательность цветов.
 
