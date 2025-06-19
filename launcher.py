@@ -1,6 +1,6 @@
 import tkinter as tk  #модуль для создания окон кнопок и интерфейса
-from tkinter import messagebox PhotoImage  #всплывающие окна и картинки в окне
-from PIL import Image ImageTk __version__ as PILLOW_VERSION  #библиотека для работы с изображениями
+from tkinter import messagebox, PhotoImage  #всплывающие окна и картинки в окне
+from PIL import Image, ImageTk, __version__ as PILLOW_VERSION  #библиотека для работы с изображениями
 import webbrowser  #открывает сайты в браузере
 import subprocess  #запускает другие программы или команды
 import sys  #доступ к функциям питона например выход из программы
