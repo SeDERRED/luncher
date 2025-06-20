@@ -1,6 +1,6 @@
 import tkinter as tk  #модуль для создания окон кнопок и интерфейса
 from tkinter import messagebox, PhotoImage  #всплывающие окна и картинки в окне
-from PIL import Image, ImageTk, __version__ as PILLOW_VERSION  #библиотека для работы с изображениями
+from PIL import Image, ImageTk  #библиотека для работы с изображениями
 import webbrowser  #открывает сайты в браузере
 import subprocess  #запускает другие программы или команды
 import sys  #доступ к функциям питона например выход из программы
@@ -178,8 +178,7 @@ class GameLauncherApp: #создаём класс лаунчера игр
         #P.S ЛОГИ ДЕЛАЛИСЬ НЕ ДЛЯ ПОЛЬЗОВАТЕЛЯ, А ДЛЯ РАЗРАБОТЧИКА ПОТОМУ ЧТО ВОЗНИКАЛИ ОШИБКИ С PILLOW
         for game_info in GAMES:  #для каждой игры из списка игр
             icon_image = None  #иконки пока нет
-            icon_path_from_config = game_info.get("icon_path") #берем путь к иконке из настроек игры
-            print(f"\n[INFO] Версия Pillow: {PILLOW_VERSION}") 
+            icon_path_from_config = game_info.get("icon_path") #берем путь к иконке из настроек игры 
             print(f"\n[ИГРА: {game_info['name']}] Обработка icon_path: '{icon_path_from_config}'")
 
             if icon_path_from_config: #если путь к иконке есть
